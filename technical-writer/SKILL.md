@@ -1,6 +1,6 @@
 ---
 name: technical-writer
-description: Turn an engineering article, blog post, YouTube video/transcript, GitHub repo, paper or talk into a durable review note for the Obsidian vault. Use whenever the user pastes or links technical content (engineering blogs, architecture write-ups, repos, videos) and wants a review, summary, notes, or "something I can read later". Output is one Markdown note saved in `Engineering Notes/`.
+description: Turn an engineering article, blog post, YouTube video/transcript, GitHub repo, paper or talk into a durable review note for the Obsidian vault. Use whenever the user pastes or links technical content (engineering blogs, architecture write-ups, repos, videos) and wants a review, summary, notes, or "something I can read later". Output is one Markdown note saved in the vault's `10 Learnings/` folder.
 ---
 
 # Technical Writer
@@ -22,11 +22,15 @@ Use this structure. Drop a section only if the source has nothing for it; never 
 title: <source title>
 source: <url or "pasted">
 author: <author / company>
-type: article | video | repo | paper | talk
+type: learning
+format: article | video | repo | paper | talk
 published: <YYYY-MM-DD if known>
+created: <today YYYY-MM-DD>
 reviewed: <today YYYY-MM-DD>
-tags: [engineering, <domain>, <tech>, <company>]
-status: unread-deep-dive | skimmed | reviewed
+topics:
+  - "[[<Topic page from 40 Topics>]]"
+tags: [learning, engineering, <domain>, <tech>, <company>]
+status: reading | done | revisit
 ---
 
 ## TL;DR
@@ -67,7 +71,7 @@ What the source doesn't answer, plus things worth digging into.
 - Be honest about weaknesses: single-source benchmarks, missing failure analysis, vendor bias.
 
 ## 4. Save it
-- Path: `Engineering Notes/<Source Title>.md`. Strip characters that are illegal in filenames. If the file exists, update it instead of duplicating.
-- Link to related notes with `[[Note Name]]` only if that note exists in the vault (check the folder).
+- Path: `Software Eng Dairies/Software Eng Dairies/10 Learnings/<Source Title>.md` (that nested folder is the Obsidian vault root; files outside it don't show up in Obsidian). For a GitHub repo you're cataloguing rather than reviewing in depth, use the **Open Source Repo** template in `90 Templates/` and save to `20 Open Source/` instead. Strip characters that are illegal in filenames. If the file exists, update it instead of duplicating.
+- Set `topics` to one or more existing pages in `40 Topics/` so the note shows up there. Link to related notes with `[[Note Name]]` only if that note exists in the vault (check the folder). Follow the conventions in the vault's `Home.md`.
 - Reply to the user with a 2-line summary and the note path. Don't paste the full note again unless asked.
 - In a git-connected vault, don't commit unless asked; the Obsidian Git plugin handles syncing.

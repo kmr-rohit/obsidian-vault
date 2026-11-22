@@ -2,11 +2,16 @@
 title: Distributed, high-performance blob storage on SQLite
 source: https://zerodha.tech/blog/high-performance-distributed-blob-storage/
 author: Sarat Chandra (Zerodha)
-type: article
+type: learning
+format: article
 published: 2026-11-19
+created: 2026-11-22
 reviewed: 2026-11-22
-tags: [engineering, storage, sqlite, rust, distributed-systems, zerodha, blob-storage]
-status: reviewed
+topics:
+  - "[[Databases]]"
+  - "[[Distributed Systems]]"
+tags: [learning, engineering, storage, sqlite, rust, distributed-systems, zerodha, blob-storage]
+status: done
 ---
 
 ## TL;DR
