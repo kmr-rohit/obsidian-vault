@@ -7,6 +7,8 @@ tags:
 
 My notebook for everything I read, try or find interesting in software.
 
+**What's next:** [[Next Learning and Experiments]] is the prioritized list of what to learn and what to build next.
+
 ## Where things go
 
 | Folder | What goes in it | Template |

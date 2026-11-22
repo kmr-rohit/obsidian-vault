@@ -9,6 +9,8 @@ Things I've actually run, built or poked at. One note per experiment, made from 
 
 `outcome` is one of `worked`, `partial` or `failed`.
 
+What to try next is queued in [[Next Learning and Experiments]].
+
 ```base
 filters:
   and:
