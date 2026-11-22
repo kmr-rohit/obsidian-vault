@@ -28,15 +28,15 @@ Review this page once a month. Tick things off, move items between sections, and
 
 **Gaps against the goal.**
 
-| Gap | Why it matters for systems work | Evidence today |
-|---|---|---|
-| No systems language (Go or Rust) | Almost everything in Sarat's path is Go or Rust; the Kubernetes and CNCF ecosystem is Go | Only Python, Java, TS, some C++ |
-| Low-level networking | Proxies, protocol servers and gateways all start at sockets and framing | Work is at the HTTP/REST/WebSocket layer |
-| Storage engine internals | Blobasaur-style work needs WAL, fsync, B-tree vs LSM, compaction | Uses Postgres, Oracle, Elasticsearch as a client |
-| Performance engineering | Systems work is judged on p99 and allocations, not just throughput | One throughput benchmark (MacBatch); no profiling or latency percentiles |
-| Replication and consensus | The step after "it works on one node" | Uses Kafka, hasn't built replication |
-| OS and Linux internals | epoll, file descriptors, page cache, syscalls explain most performance surprises | Not covered by a Mechanical Engineering degree; worth filling deliberately |
-| Shipping binaries | Static builds, cross-compilation, checksums | Shipped an npm CLI and Docker images, not native binaries |
+| Gap                              | Why it matters for systems work                                                          | Evidence today                                                             |
+| -------------------------------- | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| No systems language (Go or Rust) | Almost everything in Sarat's path is Go or Rust; the Kubernetes and CNCF ecosystem is Go | Only Python, Java, TS, some C++                                            |
+| Low-level networking             | Proxies, protocol servers and gateways all start at sockets and framing                  | Work is at the HTTP/REST/WebSocket layer                                   |
+| Storage engine internals         | Blobasaur-style work needs WAL, fsync, B-tree vs LSM, compaction                         | Uses Postgres, Oracle, Elasticsearch as a client                           |
+| Performance engineering          | Systems work is judged on p99 and allocations, not just throughput                       | One throughput benchmark (MacBatch); no profiling or latency percentiles   |
+| Replication and consensus        | The step after "it works on one node"                                                    | Uses Kafka, hasn't built replication                                       |
+| OS and Linux internals           | epoll, file descriptors, page cache, syscalls explain most performance surprises         | Not covered by a Mechanical Engineering degree; worth filling deliberately |
+| Shipping binaries                | Static builds, cross-compilation, checksums                                              | Shipped an npm CLI and Docker images, not native binaries                  |
 
 **Not a priority right now:** more AI/RAG, frontend, or new web frameworks. Keep them going through day-to-day work and Kubeflow, but they aren't where the growth is.
 
