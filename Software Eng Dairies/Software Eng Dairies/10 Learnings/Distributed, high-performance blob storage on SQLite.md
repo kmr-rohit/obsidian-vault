@@ -79,7 +79,9 @@ Zerodha replaced SSDB with **Blobasaur**, an open source (AGPLv3) Rust server th
 - (inferred) With no replication or failover described, a node loss likely makes its slots unavailable. How do they handle that today?
 - No cluster-wide throughput or multi-node scaling numbers are given.
 - How does it behave on real disks under the same load as the tmpfs benchmark?
-- Worth reading the repo: https://github.com/iamd3vil/blobasaur (group commit and the pending-write map in particular).
+- Worth reading the repo: [[Blobasaur]] (group commit and the pending-write map in particular).
 
 ## Related
-- [[Welcome]]
+- [[Blobasaur]]: the open source repo, bookmarked to follow up
+- [[Systems engineering learning path from Sarat's open source]]: building a smaller version is step 3
+- [[4th Cross Labs]]: Zerodha's open source directory
