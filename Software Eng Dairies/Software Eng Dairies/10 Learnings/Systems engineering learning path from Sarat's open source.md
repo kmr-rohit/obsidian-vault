@@ -113,11 +113,12 @@ One project every 3-6 weeks alongside work. For each one, write a README with co
 - Write up each step as a short post with numbers. That's the habit that makes this kind of work visible.
 
 ## Questions / follow-ups
-- Pick Go or Rust for step 1. (Go is faster to start; Rust is where his recent work is.)
+- ~~Pick Go or Rust for step 1.~~ Decided: Go first, Rust from step 4. See [[Next Learning and Experiments]].
 - Read `src/shard_manager.rs` in Blobasaur before starting step 3.3.
 - sarat.dev lists a "Blobnom" SQLite blob store; it's probably an earlier name of Blobasaur (inferred, not confirmed).
 
 ## Related
+- [[Next Learning and Experiments]] (my prioritized version of this path)
 - [[Blobasaur]]
 - [[4th Cross Labs]]
 - [[Distributed, high-performance blob storage on SQLite]]
