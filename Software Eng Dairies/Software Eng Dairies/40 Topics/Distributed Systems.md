@@ -11,6 +11,7 @@ Consensus, queues and streaming, caching, scalability, system design.
 ## Key notes
 Hand-picked notes worth re-reading.
 - [[Systems engineering learning path from Sarat's open source]]
+- [[Next Learning and Experiments]]
 - [[Distributed, high-performance blob storage on SQLite]]
 
 ## Everything linked here
